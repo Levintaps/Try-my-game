@@ -4,11 +4,11 @@ import sys
 
 def guess_game():
 
-    number_to_guess = random.randint(1, 100)
+    number_to_guess = random.randint(1, 10)
     attempts = 5
 
     print("Welcome to the Guessing Game!")
-    print("Guess the number between 1 and 100.")
+    print("Guess the number between 1 and 10.")
     print(f"You have {attempts} attempts to guess the correct number.\n")
 
     for attempt in range(1, attempts + 1):
@@ -29,7 +29,7 @@ def guess_game():
     print("Your computer will shut down now.")
 
     # time.sleep(5)
-    os.system("shutdown /s /t 1")  # Restart command for Windows
+    # os.system("shutdown /s /t 1")  # Restart command for Windows
     # os.system("shutdown /r /t 1")  # Shutdown command for Windows
     # os.system("sudo shutdown -r now")  # Restart command for Linux/macOS
     # os.system("sudo shutdown -h now")  # Shutdown command for Linux/macOS
